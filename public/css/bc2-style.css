@@ -1,0 +1,220 @@
+/*!
+ * BlueCare 2do Nivel 
+ * Hoja de estilos v1 David Yañez
+ * Copyright 2014 General DataComm de México (http://gdc.com.mx).
+ */
+
+html, body {height: 100%;font-size:13px;background: #f2f2f2}
+
+/* Menú principal */
+.navbar-brand {background-color: rgba(0,0,0, .2);}
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {background-color: rgba(0,0,0, .2);color:rgba(255,255,255, .75);}
+.navbar {border-radius: 4px;border-top-left-radius: 0;border-top-right-radius: 0}
+.navbar-default {background-color: #2b9fd0;border: none;box-shadow: 0 1px 4px rgba(0,0,0, .1)}
+.navbar-default .navbar-brand {color: #fff;}
+.navbar-default .navbar-nav > li > a {color: #fff;}
+.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {background: rgba(255,255,255, .15);color:#fff;}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {background-color: #fff;}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open > a:hover {background-color: #fff;color: #555;}
+.menu-item-text {margin-left: 5px;}
+.icono-ayuda {font-size: 17px;font-weight: 800;}
+
+/* Menú Secundario */
+#SecMenu {background: #fff;border-radius: 4px;border: 1px solid rgba(0,0,0, .13);box-shadow: 0 1px 1px rgba(0,0,0, .02);min-height: 40px;font-size: 12px}
+#SecMenu .navbar-nav > li > a {color:#888;}
+#SecMenu .navbar-nav > li > a:hover {background: #f5f5f5;}
+#SecMenu .nav .open > a, #SecMenu .nav .open > a:focus, #SecMenu .nav .open > a:hover {background-color: #2B9FD0;border-color: none;color:#fff;}
+#SecMenu .navbar-form {margin: 14px 0;}
+#SecMenu .dropdown-menu {background-color: #2B9FD0;box-shadow: 0 5px 5px rgba(0, 0, 0, 0.12)}
+#SecMenu .dropdown-menu > li > a {color: #fff;}
+#SecMenu .dropdown-menu > li > a:focus, #SecMenu .dropdown-menu > li > a:hover {background:#1D85AA;color: #fff;}
+#SecMenu .dropdown-menu .divider {background-color: rgba(0,0,0, .1);}
+.titulo-secmenu {padding: 9px 15px;background: #05C9C9;color:#fff;width:245px;overflow:hidden;text-overflow: ellipsis;line-height: 1;}
+.titulo-secmenu .titulo {font-size: 14px;white-space: nowrap;line-height: 1.2;}
+.titulo-secmenu .subtitulo {font-size: 12px;color:rgba(255,255,255, .66);white-space: nowrap;}
+.menusec-item-text {margin-left: 5px;}
+@media (max-width: 1130px){.menusec-item-text {display: none}}
+/*@media (min-width: 1131px){#SecMenu .navbar-nav > li > a > span.glyphicon{display: none;}}  Sirve para ocultar ícono del Secmenu en resolución md-lg */
+
+/* Pacientes */
+.datos-generales {background: #d5ecf6}
+.dashboard .panel .table-responsive, .dashboard .panel .list-group {max-height: 200px;overflow-y:auto;}
+.dashboard .panel .heredofam .list-group-item {font-size: 12px;white-space:nowrap;}
+.dashboard .panel .heredofam .list-group-item .label {display: inline-block;width: 33%;margin-right: 10px;font-size: 10px}
+
+/* Botones */
+.btn-default {background-color: #fff;box-shadow: 0 1px 0 rgba(255,255,255, 1) inset}
+.btn-default:hover {box-shadow: 0 0 3px rgba(0,0,0, .15) inset;}
+.btn-primary {background-color: #2b9fd0;border:1px solid transparent;border-bottom: 1px solid #248fb5;box-shadow: 0 1px 0 rgba(255,255,255, .3) inset}
+.btn-primary:hover {background-color: #20779c;border-color: rgba(0,0,0, .3);box-shadow: 0 0 4px rgba(0,0,0, .3) inset;color:#ccc;}
+.btn-info {background-color: #05c9c9;border:1px solid transparent;border-bottom: 1px solid #00a0a8;box-shadow: 0 1px 0 rgba(255,255,255, .5) inset}
+.btn-info:hover {background-color: #00a0a8;border-color: rgba(0,0,0, .3);box-shadow: 0 0 3px rgba(0,0,0, .3) inset;color:#ccc;}
+.btn-success {background-color: #32c651;border:1px solid transparent;border-bottom: 1px solid #26953d;box-shadow: 0 1px 0 rgba(255,255,255, .3) inset}
+.btn-success:hover {background-color: #26953d;border-color: rgba(0,0,0, .3);box-shadow: 0 0 3px rgba(0,0,0, .3) inset;color:#ccc;}
+.btn-danger {background-color: #ff2a1a;border:1px solid transparent;border-bottom: 1px solid #bf1400;box-shadow: 0 1px 0 rgba(255,255,255, .3) inset}
+.btn-danger:hover {background-color: #bf1400;border-color: rgba(0,0,0, .3);box-shadow: 0 0 3px rgba(0,0,0, .3) inset;color:#ccc;}
+.btn-warning {background-color: #ff8b15;border:1px solid transparent;border-bottom: 1px solid #e25405;box-shadow: 0 1px 0 rgba(255,255,255, .3) inset}
+.btn-warning:hover {background-color: #bf6810;border-color: rgba(0,0,0, .3);box-shadow: 0 0 3px rgba(0,0,0, .3) inset;color:#ccc;}
+
+/* Dropdowns */
+.dropdown-menu {background-color: #fff;border: none;box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);font-size: 13px;}
+
+/* Data Boxs */
+.data-box * {margin: 0;padding: 0}
+.data-box {display: inline-block;width:50px;height:50px;border-radius: 2px;padding:8px 0;margin-right:15px;color: #fff;font-size: 12px;font-weight: 700;text-align: center}
+.data-box-unit {font-weight: 300}
+.data-box-lg {width:100px}
+.list-responsive .list-group-item {white-space:nowrap;min-height: 0.01%;overflow-x: auto;}
+
+/*  Paneles */
+.panel-warning {background-color: #ffa367;color:#fff;border-color: transparent;}
+.panel-heading-btns * {display: inline-block;}
+.panel-heading-btns .btn {float: right;}
+.panel-heading-btns .btn-default {border: 1px solid transparent;background: transparent;}
+.panel-heading-btns .btn-default:hover {border: 1px solid #ccc;box-shadow: none}
+
+.panel-default > .panel-heading {background-color: #fff;/*border-bottom: 4px solid #aad9ec;*/}
+.panel-default .panel-heading h4 {display:inline-block;/*color: #55b2d9*/}
+/*.panel-default .page-header {margin: 0 0 30px 0}*/
+.panel-default .page-header h4, .panel-default .page-header .btn {display: inline-block;}
+.panel-default .page-header .btn {float: right;margin-top: 4px;margin-left: 15px}
+.pageh-text-btn {margin-left: 5px}
+.panel .panel-heading .btn {float: right;margin: 4px 0 0 15px}
+.panel .panel-body .table {font-size: 12px}
+
+.panel-verde {border-color: #b5ebc1;}
+.panel-verde > .panel-heading {background-color: #f0fff2;border-bottom: 4px solid #a5dbaf;}
+.panel-verde .panel-heading h4 {display:inline-block;color: #5ebc6e}
+
+.bg-denied {background: radial-gradient(#fce5d2,#ffb973)}
+.panel-denied {background: #eee;box-shadow: 0 1px 3px rgba(0, 0, 0, 0.33);margin: 30px 0 40px;padding: 20px 10px;}
+.panel-denied .panel-body {padding: 20px}
+.panel-denied h1 {font-weight: bolder;font-size: 30px;margin: 0}
+.panel-denied h4 {font-weight: lighter;font-size: 18px}
+.panel-denied span {color:#ff4833;font-size: 72px}
+.brand-denied {font-size: 47px;font-weight: lighter;margin-top: 120px}
+.denied-text-danger {color: #ff4833}
+
+/*.panel-headSecc h3 {font-weight: 300;margin: 0;}
+.panel-headSecc-success {background:#84dd97;color:#196329;}*/
+
+/* Tablas */
+.btns-sobre-tabla .btn, .btns-sobre-tabla label {display: inline-block;}
+.btns-sobre-tabla .btn {margin-top: -17px;float: right}
+
+/* Formularios */
+.form-horizontal .control-label {text-align: left;}
+.form-control {font-size: 13px;height: 27px;line-height: normal;padding: 3px 4px;}
+.btns-form-ad {text-align:right;margin-top: 15px;border-top: 1px solid #eee}
+.btns-form-ad .btn {margin-left: 15px;margin-top: 16px}
+#madre textarea, #padre textarea  {margin: 10px 0 20px 0}
+.textarea-min textarea.form-control {height: 24px;}
+.radio-min .checkbox, .radio-min .radio {margin-bottom: 0;margin-top: 3px;}
+.radio-min .checkbox label > input {margin-top:2px;}
+.radio-min .checkbox label {margin-left:15px;}
+.radio-min .checkbox label:first-child {margin-left:0;}
+.radio-min .radio label > input {margin-top:2px;}
+.radio-min .radio label {margin-left:15px;}
+.radio-min .radio label:first-child {margin-left:0;}
+.input-group-btn .btn.btn-sm {padding:4px 9px 3px 9px;}
+.input-group-addon {padding: 5px 12px 5px 12px;}
+
+/* Footer */
+footer {padding: 15px; background: #2b9fd0;border-top-left-radius: 4px;border-top-right-radius: 4px;color:#fff;}
+footer a {color: #fff}
+footer a:hover {color: #fff}
+
+.pagination {margin:0;}
+.tab-content > .tab-pane {padding: 15px}
+.wrapper {min-height: 100%;position: relative;}
+
+@media (max-width: 992px) {.modal-dialog {width: auto;margin: 15px;}.menu-item-text, .pageh-text-btn {display: none}}
+@media (max-width: 800px) {.page-header h4 {display: block !important}.page-header .btn {float:none !important;}.page-header .btn:nth-child(2){margin-left: 0}}
+@media (max-width: 600px) {.titulo-secmenu, .titulo-secmenu .titulo, .titulo-secmenu .subtitulo {display: inline;width: 100%}}
+@media (min-width: 510px) {
+  .navbar-header {float: left;}
+  .navbar-collapse {width: auto;border-top: 0;-webkit-box-shadow: none;box-shadow: none;}
+  .navbar-collapse.collapse {display: block !important;height: auto !important;padding-bottom: 0;overflow: visible !important;visibility: visible !important;}
+  .navbar-collapse.in {overflow-y: visible;}
+  .navbar-fixed-top .navbar-collapse,
+  .navbar-static-top .navbar-collapse,
+  .navbar-fixed-bottom .navbar-collapse {padding-right: 0;padding-left: 0;}
+  .navbar-toggle {display: none;}
+  .navbar-nav {float: left;margin: 0;}
+  .navbar-nav > li {float: left;}
+  .navbar-nav > li > a {padding-top: 15px;padding-bottom: 15px;}
+  #SecMenu .navbar-nav > li > a {padding: 14px 14px 13px;}
+}
+@media (max-width: 509px) {#SecMenu .navbar-nav {float: left;margin: 0;}#SecMenu .navbar-nav > li {float: left;}#SecMenu .navbar-nav > li > a {padding: 10px 8px;}.navbar-nav {margin: 0;}}
+
+/* Auxiliares */
+.success {background: #00CE53}
+.primary {background: #2b9fd0}
+.info {background: #05c9c9}
+.danger {background: #D90E00}
+.warning {background: #F4A000}
+.gris {background: #CEDCF2}
+.black {background: #505759}
+
+.text-inverse {color:#fff;}
+.text-success {color:#ff4833;}
+
+.nomargintop {margin-top: 0}
+.nomarginbot {margin-bottom: 0}
+.nomarginrig {margin-right: 0 !important}
+.nomargin {margin: 0}
+.nopad {padding:0;}
+.nopadleft {padding-left: 0}
+.nopadright {padding-right: 0}
+.margintop30 {margin-top:30px;}
+.marginbot20 {margin-bottom:20px;}
+.minuspadleft {margin-left: -15px}
+.marginright30 {margin-right: 30px}
+
+.border-right {border-right:1px solid #ccc;}
+
+
+/*Son los que agrego Ivan*/
+.alert-box-container {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: none;
+  left: 0;
+  position: fixed;
+  text-align: center;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+.alert-box-container #alert-box {
+  padding: 1.5em 0.5em;
+}
+.alert-box-container #alert-box p {
+  font: normal 16px "Arial", arial;
+  margin: 0;
+  padding: 0;
+}
+.alert-box-error,
+.alert-box-success {
+  color: #fff;
+}
+.alert-box-error {
+  background-color: #bc1c48;
+}
+.alert-box-success {
+  background-color: #01a31c;
+}
+
+.mark-up-error {
+  border-color: rgba(149,59,57,0.8) !important;
+  -webkit-transition: all linear 0.2s;
+  transition: all linear 0.2s;
+  outline: 0 !important;
+}
+
+/*.restringido-brand {font-size: 72px;color:#fff;background:#2b9fd0;padding:20px;margin-bottom: 20vh;}
+.restringido-img span {font-size:90px;color:#ccc;}
+.restringido-img {float: left;display: inline-block;margin-right: 50px;margin-top: 35px;margin-left: 30px}
+.restringido-footer {background: #999;position: absolute;bottom: 0;min-width: 100%;padding-top: 25px}
+.restringido-footer p {display: inline-block;}*/
